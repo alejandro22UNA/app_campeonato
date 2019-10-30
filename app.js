@@ -3,6 +3,7 @@ var bodyparser = require('body-parser');
 var expressjwt = require('express-jwt');
 var cors = require('cors');
 var path = require('path');
+var os = require("os");
 //agregadas despues de descargado de git
 
 var app = express();
@@ -32,6 +33,7 @@ var server = app.listen(8000, function() {
    console.log('Escuchando en el puerto ', server.address().port);
 })
 */
+var hostname = os.hostname();
 var server = app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'))
+  console.log("Node app is running at"+ hostname + "en el puerto" + app.get('port'))
 })
