@@ -1,4 +1,4 @@
-var db = require('./queries');
+var db = require('./queries/queries');
 
 function http() {
    this.configurar = function(app) {
