@@ -35,5 +35,5 @@ var server = app.listen(8000, function() {
 */
 var hostname = os.hostname();
 var server = app.listen(app.get('port'), function() {
-  console.log("Node app is running at"+ hostname + "en el puerto" + app.get('port'))
+  console.log("Node app is running at "+ hostname + " en el puerto " + app.get('port'))
 })
