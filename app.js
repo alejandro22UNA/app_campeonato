@@ -23,7 +23,7 @@ app.use(cors());
    ]}));*/
 
 var connection = require('./connection');
-var routes = require('./routes');
+var routes = require('./routes/routes');
 
 
 connection.inicia();
